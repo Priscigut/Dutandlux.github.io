@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxury Agency</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0d0d0d;
+    color: white;
+}
+
+/* NAV */
+header {
+    position: absolute;
+    width: 100%;
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+nav a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.year {
+    opacity: 0.6;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Imagen fondo */
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+/* Overlay azul */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0,90,255,0.9), rgba(255,0,90,0.6));
+    mix-blend-mode: multiply;
+}
+
+/* TEXTO */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+
+.content h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 90px;
+    line-height: 0.9;
+    text-transform: uppercase;
+}
+
+.content span {
+    display: block;
+}
+
+/* BOTÓN */
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 28px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* SOCIAL */
+.social {
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px){
+
+    .content h1 {
+        font-size: 50px;
+    }
+
+    .overlay {
+        width: 100%;
+    }
+
+    header {
+        padding: 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <a href="#">UX/UI DESIGN</a>
+        <a href="#">WEB DESIGN</a>
+        <a href="#">AGENCY</a>
+    </nav>
+
+    <div class="year">2026</div>
+</header>
+
+<section class="hero">
+
+    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2" alt="model">
+
+    <div class="overlay"></div>
+
+    <div class="content">
+        <h1>
+            <span>We</span>
+            <span>Create</span>
+            <span>What</span>
+            <span>Stands Out</span>
+        </h1>
+
+        <a href="#" class="btn">Start your project</a>
+    </div>
+
+    <div class="social">
+        <div>IG</div>
+        <div>FB</div>
+        <div>BE</div>
+    </div>
+
+</section>
+
+</body>
+</html>
